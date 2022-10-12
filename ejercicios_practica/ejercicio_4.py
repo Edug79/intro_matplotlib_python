@@ -54,4 +54,34 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
-    print("terminamos")
+    fig = plt.figure()
+    fig.suptitle('Funciones', fontsize=16)
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
+
+    ax1.plot(y1 , color='g', marker='.', label='Funcion cuadratica')
+    ax1.set_facecolor('whitesmoke')    
+    ax1.set_ylabel("Valores de Y")
+    ax1.legend()
+
+
+    ax2.plot(y2 , color='b', marker='*', label='Funcion cubica')
+    ax2.set_facecolor('whitesmoke')    
+    ax2.legend()
+
+    ax3.plot(y3 , color='m', marker=' ', label='Funcion Cuarta')
+    ax3.set_facecolor('whitesmoke')    
+    ax3.set_xlabel("Valores de X")
+    ax3.legend()
+
+    ax4.plot(y4 , color='c', marker='+', label='Raiz Cuadrada')
+    ax4.set_facecolor('whitesmoke')    
+    ax4.legend()
+
+plt.show()
+
+
+print("terminamos")

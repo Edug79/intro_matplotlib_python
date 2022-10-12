@@ -46,4 +46,19 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
+    ax.plot(y1, color='b', marker='^', label='Funcion cuadratica')
+    ax.plot(y2, color='c', marker='+', label='Funcion Cubica')
+    
+    ax.set_facecolor('whitesmoke')
+    ax.set_title("Funciones")
+    ax.set_ylabel("Valores de Y")
+    ax.set_xlabel("Valores de X")
+    ax.legend()
+    
+    
+    plt.show()
+
     print("terminamos")
